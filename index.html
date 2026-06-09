@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Physics of Arrival</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #161f32;
+            --accent-blue: #00d2ff;
+            --accent-purple: #7928ca;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--bg-color), var(--card-bg));
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(to right, var(--accent-blue), #ff007f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin: 10px 0 20px 0;
+            font-style: italic;
+        }
+
+        .rating-box {
+            background: rgba(255, 255, 255, 0.05);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 210, 255, 0.3);
+        }
+
+        .stars {
+            color: #ffcc00;
+            font-size: 1.8rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .review-section {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--accent-blue);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .media-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .media-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--accent-purple);
+        }
+
+        .media-card.diagram img {
+            border-bottom: 3px solid var(--accent-blue);
+            background-color: #fff; /* Helps scientific diagrams pop */
+            object-fit: contain;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .media-caption {
+            padding: 20px;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            flex-grow: 1;
+        }
+
+        .caption-title {
+            font-weight: bold;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .caption-title.purple {
+            color: #d946ef;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Arrival Analysis</h1>
+        <div class="subtitle">A Physics Analysis of the movie "Arrival"</div>
+        <div class="rating-box">
+            <span>Science Accuracy Rating: </span>
+            <span class="stars">★★★★</span>
+            <span>(4/5 Stars)</span>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section class="review-section">
+            <h2>The Scientific Review</h2>
+            <p><strong>Direct Connection to Physics:</strong> The movie <em>Arrival</em> by Denis Villeneuve connects directly to advanced physics. Instead of using fake science words, the story is built around real physics, laws of motion and light Specifically, it contrasts how humans view time second-by-second, and how aliens view the entire timeline at once.</p>
+            
+            <p><strong>What the Film Gets Right:</strong>Arrival connects directly to real physics by basing its alien science on a verified law called Fermat's Principle of Least Time. In the real world, a beam of light always bends when passing through water to take the path that takes the absolute shortest amount of time. Mathematically, it acts as if it knows its final destination before it even starts moving, which is the language of the alien in the movie.</p>
+            
+            <p><strong>The Inaccuracies & Sci-Fi Stretches:</strong> Inside the ship, gravity suddenly flips 90 degrees so the characters can walk on the walls. This is an apply to Albert Einstein's idea that gravity bends space. However, in the real world, gravity cannot be cut off like a sharp doorway. Real gravity is an invisible field that leaks and fades out slowly with distance. Because of this, it would actually bleed outside the ship and pull at the characters before they even step inside.</p>
+            
+            <p><strong>Conclusion:</strong> In conclusion, Arrival treats science with great respect. Instead of using fake sci-fi words, the movie uses real mathematical mysteries about how our universe works to tell an unforgettable story.</p>
+        </section>
+
+        <h2>Scientific Diagrams</h2>
+        <div class="grid-container">
+            <div class="media-card diagram">
+                <img src="image.png" alt="Fermat's Principle Diagram">
+                <div class="media-caption">
+                    <span class="caption-title">Diagram 1: Fermat's Principle of Least Time</span>
+                    This diagram shows how light bends to take the fastest possible path between two points, acting as if it knows its destination before it starts moving, which is exactly how the aliens in Arrival experience time.
+                </div>
+            </div>
+
+            <div class="media-card diagram">
+                <img src="image copy.png" alt="Newtonian vs Lagrangian Mechanics">
+                <div class="media-caption">
+                    <span class="caption-title">Diagram 2: Sequential vs. Variational Paths</span>
+                    This diagram shows how humans process events step-by-step over linear time. It contrasts perfectly with the alien perspective, where history and the future are evaluated all at once.
+                </div>
+            </div>
+        </div>
+
+        <h2>Movie Context & Screenshots</h2>
+        <div class="grid-container">
+            <div class="media-card">
+                <img src="https://images.squarespace-cdn.com/content/v1/55386ad8e4b002ebf3fcf717/1490151715397-KVNM4M2J20ODLXRB930U/image-asset.png" alt="Heptapod Written Language">
+                <div class="media-caption">
+                    <span class="caption-title purple">Screenshot 1: The Weird Language</span>
+                    A screenshot of the view of the alien language. The written language has no starting or ending point, the entire sentence is written in a circular splash. This design perfectly showed the physics principles discussed in the review, where the beginning and end must coexist.
+                </div>
+            </div>
+
+            <div class="media-card">
+                <img src="Screenshot 2026-06-08 125048.png" alt="Gravity Shift Scene">
+                <div class="media-caption">
+                    <span class="caption-title purple">Screenshot 2: The Gravitational Shift</span>
+                    This scene captures the moment the research team steps into the alien craft and experiences a 90 degree shift in gravity. From a physics standpoint, this represents an advanced manipulation of general relativity, showing the aliens can warp localized spacetime without requiring massive planetary weight.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Physics & Pop Culture Project | Created by [Your Name] & [Partner Name]</p>
+    </footer>
+
+</body>
+</html>
